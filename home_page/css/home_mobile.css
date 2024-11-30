@@ -77,6 +77,7 @@
     .hamburger-container {
         margin-right: 20px;
     }
+    
     .btn-hamburger {
         display: flex;
         width: 40px;
@@ -92,6 +93,7 @@
     #hamburger {
         border-top: 2px solid white;
         width: 24px;
+        position: relative;
     }
     #hamburger::after,
     #hamburger::before {
@@ -105,18 +107,20 @@
         position: relative;
     }
 
-    .nav-link.active #hamburger {
-        border-top: transparent;
+    .btn-hamburger.active #hamburger {
+        border-top: none;
     }
-
-    .nav-link.active #hamburger::before {
+    
+    .btn-hamburger.active #hamburger::before {
         transform: rotate(135deg);
+        top: 2px;
     }
-
-    .nav-link.active #hamburger::after {
+    
+    .btn-hamburger.active #hamburger::after {
         transform: rotate(-135deg);
-        top: -7px;
+        top: -9px;
     }
+    
 
     /* Footer */
     .footer-container {
