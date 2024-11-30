@@ -15,7 +15,8 @@
 }
 
 /* Body */
-body, html{
+body,
+html {
     font-family: 'Poppins', sans-serif !important;
     background-color: var(--color-primary);
 }
@@ -27,28 +28,33 @@ body {
 /* Header com Navbar */
 .header-container {
     width: 100%;
-    height: 108px;
+    max-height: 108px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.08);
 }
 .nav-container {
-    width: 1280px;
-    height: 58px;
+    max-width: 1280px;
+    width: 100%;
+    max-height: 58px;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 .nav-logo {
-    width: 185px;
+    max-width: 185px;
+    width: 100%;
 }
-.btn-hamburguer {
+.btn-hamburger {
     display: none;
 }
 .nav-link {
-    width: 713px;
+    max-width: 713px;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -62,6 +68,7 @@ body {
     gap: 40px;
     margin: 0;
     padding-left: 0;
+    list-style-type: none;
 }
 .nav-link ul li a {
     color: rgba(255, 255, 255, 0.5);
@@ -84,11 +91,10 @@ body {
 }
 #start-session {
     width: 153px;
+    height: 56px;
     background-color: transparent;
     color: var(--color-quaternary);
     border: 1px solid var(--color-quaternary);
-    width: 153px;
-    height: 56px;
     border-radius: 50px;
     transition: 0.5s;
 }
@@ -121,7 +127,8 @@ main {
     display: flex;
     flex-direction: column;
     flex: 1;
-    height: 100%;
+    height: 100vh;
+    background-color: white;
 }
 
 /* Footer */
@@ -134,25 +141,31 @@ main {
 
 /* First Section */
 .first-section {
-    width: 1280px;
+    max-width: 1280px;
+    width: 100%;
     height: 200px;
+    max-height: 200px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     display: flex;
     align-items: center;
 }
 
 .first-section-container {
-    width: 1280px;
-    height: 84px;
+    max-width: 1280px;
+    width: 100%;
+    max-height: 84px;
+    height: 100%;
     display: flex;
     justify-content: space-between;
 }
 
 .first-section-container .title-container {
-    width: 420px;
-    height: 72px;
     display: flex;
     align-items: center;
+    max-width: 420px;
+    width: 100%;
+    max-height: 72px;
+    height: 100%;
 }
 
 .first-section-container .title-container h4 {
@@ -162,8 +175,10 @@ main {
 }
 
 .first-section-container .input-container {
-    width: 539px;
-    height: 84px;
+    max-width: 539px;
+    width: 100%;
+    max-height: 84px;
+    height: 100%;
     position: relative;
     display: flex;
     align-items: center;
@@ -171,7 +186,8 @@ main {
 }
 
 .first-section-container .input-container input {
-    width: 380px;
+    max-width: 380px;
+    width: 100%;
     height: 53px;
     padding-left: 20px;
     display: flex;
@@ -217,52 +233,64 @@ main {
 
 /* Second Section */
 .second-container {
-    width: 1280px;
+    max-width: 1280px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     margin: 64px 0 80px 0;
 }
 .social-container {
-    width: 334px;
-    height: 145px;
+    max-width: 334px;
+    width: 100%;
+    max-height: 145px;
+    height: 100%;
     display: flex;
     flex-direction: column;
 }
 #social-icons {
     display: flex;
-    width: 211px;
+    max-width: 211px;
+    width: 100%;
     height: 40px;
     gap: 46px;
     margin-bottom: 41px;
+    cursor: pointer;
 }
 #social-icons i {
     font-size: 40px;
     color: var(--color-quaternary);
+    transition: .5s;
+}
+#social-icons i:hover {
+    transform: scale(1.1);
+    color: var(--color-tertiary);
 }
 .social-text-container {
     color: var(--color-tertiary);
     font-family: Poppins;
 }
-.link-footer-container{
-    width: 521px;
+.link-footer-container {
+    max-width: 521px;
+    width: 100%;
     height: 108px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 .link-footer {
-    width: 235px;
+    max-width: 235px;
+    width: 100%;
     height: 108px;
 }
-.link-footer-container ul{
+.link-footer-container ul {
     display: flex;
     flex-direction: column;
     gap: 18px;
     list-style-type: none;
     margin: 0;
 }
-.link-footer-container ul li a{
+.link-footer-container ul li a {
     text-decoration: none;
-    font-family: "Poppins";
+    font-family: 'Poppins';
     color: var(--color-quaternary);
 }

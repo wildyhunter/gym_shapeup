@@ -8,6 +8,10 @@
 }
 
 @media screen and (max-width: 600px) {
+    body {
+        width: 100%;
+        height: 100vh;
+    }
     .header-container {
         height: 100px !important;
     }
@@ -27,17 +31,17 @@
         position: absolute;
         top: 80px;
         right: 0;
-        width: 100vw;
+        width: 100%;
         height: 0;
         background-color: var(--color-primary);
         z-index: 1;
-        padding-top: 150px;
+        padding-top: 100px;
         transition: 0.3s;
         visibility: hidden;
         overflow-y: hidden;
     }
     .nav-link.active {
-        height: 650px;
+        height: 550px;
         visibility: visible;
     }
     .nav-link ul {
@@ -95,7 +99,56 @@
         display: block;
         width: 24px;
         height: 2px;
-        background-color: white;
+        border: 1px solid white;
         margin-top: 8px;
+        transition: 0.3s;
+        position: relative;
+    }
+
+    .nav-link.active #hamburger {
+        border-top: transparent;
+    }
+
+    .nav-link.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    .nav-link.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    /* Footer */
+    .footer-container {
+        width: 100%;
+    }
+    .first-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 342px;
+    }
+    
+    .first-section-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-height: 408px;
+    }
+    .title-container {
+        height: 108px;
+        margin: 60px 0;
+    }
+    .title-container h4 {
+        height: 108px;
+        margin: 0;
+    }
+    .input-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .input-container input {
+        min-height: 56px;
     }
 }
