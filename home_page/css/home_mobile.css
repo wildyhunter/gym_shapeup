@@ -41,7 +41,7 @@
         overflow-y: hidden;
     }
     .nav-link.active {
-        height: 550px;
+        height: 600px;
         visibility: visible;
     }
     .nav-link ul {
