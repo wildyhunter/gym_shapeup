@@ -1,4 +1,4 @@
-const btn_hamburguer = document.querySelector(".btn-hamburguer");
+const btn_hamburguer = document.querySelector(".btn-hamburger");
 
 function toogleMenu() {
     const nav = document.querySelector(".nav-link");

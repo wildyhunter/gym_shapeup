@@ -8,20 +8,17 @@
 }
 
 @media screen and (max-width: 600px) {
-
     .header-container {
-        height: 100px!important;
+        height: 100px !important;
     }
-
     .nav-container {
         position: relative;
         display: flex;
     }
-
     .btn-hamburguer {
         display: block;
     }
-    .nav-logo img{
+    .nav-logo img {
         width: 146px;
         padding-left: 24px;
     }
@@ -47,11 +44,11 @@
         display: block;
         font-size: 24px;
         padding-left: 24px;
-        list-style: none!important;
+        list-style: none !important;
     }
     .nav-link ul li {
-        padding-bottom: 48px;}
-
+        padding-bottom: 48px;
+    }
     #start-session {
         position: absolute;
         bottom: 30px;
@@ -73,5 +70,32 @@
     .nav-link.active .language-container {
         opacity: 1;
     }
-    
-};
+    .hamburger-container {
+        margin-right: 20px;
+    }
+    .btn-hamburger {
+        display: flex;
+        width: 40px;
+        height: 40px;
+        justify-content: center;
+        padding: 8px 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 5px;
+    }
+    #hamburger {
+        border-top: 2px solid white;
+        width: 24px;
+    }
+    #hamburger::after,
+    #hamburger::before {
+        content: '';
+        display: block;
+        width: 24px;
+        height: 2px;
+        background-color: white;
+        margin-top: 8px;
+    }
+}
