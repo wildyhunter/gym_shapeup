@@ -10,7 +10,7 @@
 @media screen and (max-width: 600px) {
     body {
         width: 100%;
-        height: 100vh;
+        height: 100%;
     }
     .header-container {
         height: 100px !important;
@@ -34,7 +34,7 @@
         width: 100%;
         height: 0;
         background-color: var(--color-primary);
-        z-index: 1;
+        z-index: 3;
         padding-top: 100px;
         transition: 0.3s;
         visibility: hidden;
@@ -120,35 +120,59 @@
 
     /* Footer */
     .footer-container {
-        width: 100%;
+        width: 342px;
+        margin: 0 auto;
     }
+    /* First Section */
     .first-section {
         display: flex;
         flex-direction: column;
         width: 100%;
-        max-width: 342px;
+        height: auto;
     }
-    
     .first-section-container {
         display: flex;
         flex-direction: column;
-        width: 100%;
-        min-height: 408px;
+        height: auto;
     }
     .title-container {
-        height: 108px;
         margin: 60px 0;
     }
     .title-container h4 {
-        height: 108px;
         margin: 0;
     }
     .input-container {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: flex-start !important;
+        height: 128px !important;
+        margin-bottom: 52px !important;
     }
     .input-container input {
-        min-height: 56px;
+        height: 52px;
+    }
+    .input-container i {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: 24px;
+        top: 16px;
+        font-size: 18px;
+        color: #aaa;
+    }
+    /* Second Section */
+    .second-container {
+        display: flex;
+        flex-direction: column;
+        margin: 64px 0 100px 0;
+    }
+    .social-icons {
+        margin-bottom: 40px;
+    }
+    .link-footer-container {
+        margin-top: 100px !important;
+    }
+    .link-footer-container ul {
+        padding: 0;
     }
 }

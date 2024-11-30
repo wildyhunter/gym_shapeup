@@ -23,13 +23,12 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
 }
 /* Header com Navbar */
 .header-container {
     width: 100%;
-    max-height: 108px;
-    height: 100%;
+    height: 108px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,8 +37,7 @@ body {
 .nav-container {
     max-width: 1280px;
     width: 100%;
-    max-height: 58px;
-    height: 100%;
+    height: 58px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -126,8 +124,7 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    flex: 1;
-    height: 100vh;
+    min-height: 100px;
     background-color: white;
 }
 
@@ -144,7 +141,6 @@ main {
     max-width: 1280px;
     width: 100%;
     height: 200px;
-    max-height: 200px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     display: flex;
     align-items: center;
@@ -153,8 +149,7 @@ main {
 .first-section-container {
     max-width: 1280px;
     width: 100%;
-    max-height: 84px;
-    height: 100%;
+    height: 84px;
     display: flex;
     justify-content: space-between;
 }
@@ -164,8 +159,7 @@ main {
     align-items: center;
     max-width: 420px;
     width: 100%;
-    max-height: 72px;
-    height: 100%;
+    height: 72px;
 }
 
 .first-section-container .title-container h4 {
@@ -177,8 +171,7 @@ main {
 .first-section-container .input-container {
     max-width: 539px;
     width: 100%;
-    max-height: 84px;
-    height: 100%;
+    height: 84px;
     position: relative;
     display: flex;
     align-items: center;
@@ -242,8 +235,7 @@ main {
 .social-container {
     max-width: 334px;
     width: 100%;
-    max-height: 145px;
-    height: 100%;
+    height: 145px;
     display: flex;
     flex-direction: column;
 }
@@ -259,7 +251,7 @@ main {
 #social-icons i {
     font-size: 40px;
     color: var(--color-quaternary);
-    transition: .5s;
+    transition: 0.5s;
 }
 #social-icons i:hover {
     transform: scale(1.1);
