@@ -6,7 +6,7 @@
     --color-tertiary: #a793f7;
     --color-quaternary: #f5f5f5;
 }
-
+/* Body */
 body {
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 90%, rgba(8, 4, 25, 1) 100%), 
     url('../img/background_body.svg');;
@@ -17,11 +17,13 @@ body {
     
 }
 
+/* Main */
 main {
     max-width: 1280px;
     width: 100%;
 }
 
+/* Section title text */
 section.title-container {
     display: flex;
     max-width: 983px;
@@ -34,4 +36,32 @@ section.title-container {
     color: var(--color-quaternary);
     font-weight: bold;
     margin: 0;
+}
+
+/* Second Section numbers*/
+section.number-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1280px;
+    width: 100%;
+}
+.numbers-container{
+    display: flex;
+    gap: 20px;
+}
+#first-number, #second-number, #third-number, #fourth-number {
+    max-width: 630px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 300px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    color: var(--color-quaternary);
+}
+.numbers-container h1{
+    width: 350px;
+    font-size: 96px;
+}
+.numbers-container h4 {
+    width: 240px;
 }
