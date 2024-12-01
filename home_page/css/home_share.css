@@ -19,12 +19,13 @@ body,
 html {
     font-family: 'Poppins', sans-serif !important;
     background-color: var(--color-primary);
+    height: 100%;
 }
 body {
     display: flex;
     flex-direction: column;
-    height: 100%;
 }
+
 /* Header com Navbar */
 .header-container {
     width: 100%;
@@ -124,8 +125,7 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    min-height: 100px;
-    background-color: white;
+    flex: 1;
 }
 
 /* Footer */
@@ -285,4 +285,25 @@ main {
     text-decoration: none;
     font-family: 'Poppins';
     color: var(--color-quaternary);
+}
+.copy-container {
+    width: 100%;
+    height: 69px;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-secondary);
+}
+.copy {
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-tertiary);
+}
+.copy ul {
+    display: flex;
+    list-style-type: none;
+    gap: 32px;
 }
