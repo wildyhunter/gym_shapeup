@@ -1,3 +1,38 @@
+:root {
+    --color-primary: rgb(8, 4, 25);
+    --color-secondary: #4f45ea;
+    --color-tertiary: #a793f7;
+    --color-quaternary: #f5f5f5;
+}
+
+body {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 90%, rgba(8, 4, 25, 1) 100%), 
+    url('../img/backgroud-body.png');;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    
+}
+main {
+    max-width: 1280px;
+    width: 100%;
+}
+
+section.title-container {
+    display: flex;
+    max-width: 983px;
+    width: 100%;
+    padding: 414px 0 472px 0;
+
+}
+.main-container .title-container h1 {
+    font-size: 96px;
+    color: var(--color-quaternary);
+    font-weight: bold;
+    margin: 0;
+}
+
 /* estilo do acordeão */ 
 .accordion-button { 
     background-color: #1a1a1a; /* fundo do botão */
@@ -28,6 +63,47 @@
     border: none; /*remove as bordas padrão*/
     margin-bottom: 10px; /*espaçamento entre os itens*/
 }
+
+/* ajuste de imagem */
+.accordion-img img {
+    width: 250px; /* ajustar o tamanho da imagem */
+    height: auto; /*  proporção */
+    border-radius: 8px; /* Arredonda as bordas da imagem */
+    object-fit: cover; /* Faz a imagem se ajustar ao tamanho sem deformar */
+}
+
+/* ajustes de texto */
+.accordion-text p {
+    font-size: 1rem; /* Tamanho da fonte */
+    line-height: 1.5; /* Espaçamento entre linhas */
+    color: #333; /* Cor do texto */
+    margin-top: 10px; /* Espaço acima do texto */
+}
+
+/* Ajustes de layout */
+.accordion-body {
+    display: flex; /* Organiza o layout em linha */
+    align-items: center; /* Alinha verticalmente */
+    gap: 20px; /* Espaçamento entre a imagem e o texto */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .accordion-body {
+        flex-direction: column; /* Coloca a imagem e o texto em coluna em telas menores */
+        align-items: flex-start; /* Alinha os itens no começo */
+    }
+
+    .accordion-img img {
+        width: 100%; /* Imagem fica maior em telas pequenas */
+        max-width: 200px; /* Limita o tamanho máximo da imagem */
+    }
+}
+
+
+
+
+
 
  
 
