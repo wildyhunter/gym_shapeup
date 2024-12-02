@@ -211,7 +211,7 @@ main {
 
 .first-section-container .input-container button {
     width: 131px;
-    height: 52px;
+    height: 56px;
     font-family: 'Poppins', sans-serif !important;
     background-color: var(--color-tertiary);
     color: var(--color-primary);
@@ -309,4 +309,13 @@ main {
     display: flex;
     list-style-type: none;
     gap: 32px;
+}
+.copy ul li a {
+    text-decoration: none;
+    color: var(--color-tertiary);
+    transition: .3s;
+    cursor: pointer;
+}
+.copy a:hover {
+    color: var(--color-quaternary);
 }
