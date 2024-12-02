@@ -237,3 +237,95 @@ section.number-container {
     color: var(--color-tertiary);
     transform: scale(1.05);
 }
+
+/* Section prices */
+.price-container {
+    display: flex;
+    gap: 20px;
+    max-width: 1280px;
+    width: 100%;
+    height: auto;
+}
+.price-card {
+    width: 100%;
+    max-width: 413px;
+    height: 704px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    color: var(--color-quaternary);
+}
+.price-card h4,
+.price-card h3,
+.price-card p {
+    margin: 0 40px;
+}
+.price-card h4 {
+    font-weight: bold;
+    margin-top: 40px;
+}
+#basic-plan {
+    margin-top: 0;
+}
+.price-card h3 {
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    margin-top: 40px;
+    font-size: 40px;
+}
+.price-card h3 p {
+    font-size: 16px;
+    margin: 0;
+    padding: 0 0 10px 5px;
+}
+#btn-price {
+    margin: 40px;
+    max-width: 333px;
+    width: 100%;
+    height: 60px;
+    background-color: var(--color-tertiary);
+    color: var(--color-primary);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#btn-price:hover {
+    background-color: transparent;
+    border: 1px solid var(--color-tertiary);
+    color: var(--color-tertiary);
+    transform: scale(1.05);
+}
+.price-card i {
+    padding-right: 5px;
+}
+.price-card p {
+    margin-top: 20px;
+}
+#price-basic-two {
+    margin-top: 100px;
+}
+#price-basic-tree {
+    margin-top: 200px;
+}
+
+/* section final-banner */
+section.final-banner {
+    max-width: 100%;
+    width: 100%;
+    max-height: 557px;
+    height: 100%;
+    margin-top: 400px;
+}
+.final-banner-container {
+    width: 100%;
+    height: 557px;
+    position: relative;
+    background-image: url(../img/banner_02.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
