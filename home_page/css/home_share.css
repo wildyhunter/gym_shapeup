@@ -35,6 +35,8 @@ body {
     justify-content: center;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+    z-index: 5;
 }
 .nav-container {
     max-width: 1280px;
@@ -44,6 +46,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    z-index: 2;
 }
 .nav-logo {
     max-width: 185px;
@@ -99,7 +102,7 @@ body {
     transition: 0.5s;
 }
 #start-session:hover {
-    background-color: var(--color-tertiary);
+    background-color: var(--color-quaternary);
     color: var(--color-primary);
     transform: scale(1.05);
 }
@@ -197,13 +200,12 @@ main {
     color: rgba(255, 255, 255, 0.5);
     padding-left: 34px;
 }
-.input-container i {
+.input-container img {
     width: 20px;
     height: 20px;
     position: absolute;
     left: 24px;
     top: 32px;
-    font-size: 18px;
     color: #aaa;
 }
 
@@ -249,12 +251,12 @@ main {
     margin-bottom: 41px;
     cursor: pointer;
 }
-#social-icons i {
-    font-size: 40px;
-    color: var(--color-quaternary);
+#social-icons img {
+    width: 32px;
+    height: 32px;
     transition: 0.5s;
 }
-#social-icons i:hover {
+#social-icons img:hover {
     transform: scale(1.1);
     color: var(--color-tertiary);
 }
