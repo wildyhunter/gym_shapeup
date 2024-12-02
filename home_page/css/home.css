@@ -230,7 +230,7 @@ section.number-container {
 }
 #btn-banner {
     width: 184px;
-    height: 52px;
+    height: 56px;
     background-color: var(--color-tertiary);
     color: var(--color-primary);
     border: none;
@@ -292,7 +292,7 @@ section.number-container {
     margin: 40px;
     max-width: 333px;
     width: 100%;
-    height: 60px;
+    height: 56px;
     background-color: var(--color-tertiary);
     color: var(--color-primary);
     border: none;
@@ -326,7 +326,12 @@ section.final-banner {
     width: 100%;
     height: 557px;
     position: relative;
-    background-image: url(../img/banner_02.png);
+    background-image: linear-gradient(
+            to top,
+            rgba(255, 255, 255, 0) 80%,
+            rgba(8, 4, 25, 1) 100%
+        ),
+        url('../img/banner_02.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
