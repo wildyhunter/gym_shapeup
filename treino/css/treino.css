@@ -27,7 +27,7 @@ section.title-container {
 
 }
 .main-container .title-container h1 {
-    font-size: 96px;
+    font-size: 64px;
     color: var(--color-quaternary);
     font-weight: bold;
     margin: 0;
@@ -35,10 +35,10 @@ section.title-container {
 
 /* estilo do acordeão */ 
 .accordion-button { 
-    background-color: #1a1a1a; /* fundo do botão */
-    color: #fff; /* cor do texto */
-    font-size: 16px;
-    font-weight: 600;
+    background-color: rgb(8, 4, 25); /* fundo do botão */
+    color: #a793f7; /* cor do texto */
+    font-size: 40px;
+    font-weight: 200;
     border: none;
     margin-bottom: 10px;
     border-radius: 5px; /*borda arredonda */
@@ -46,13 +46,13 @@ section.title-container {
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: #333; /*fundo ao expandir*/
-    color: #fff; /*cor do texto ao expandir*/
+    background-color: rgb(8, 4, 25); /*fundo ao expandir*/
+    color: #a793f7; /*cor do texto ao expandir*/
 }
 
 .accordion-body {
-    background-color: #2a2a2a; /*fundo do conteúdo*/
-    color: #cfcfcf; /*cor do texto do centeudo*/
+    background-color: rgb(8, 4, 25); /*fundo do conteúdo*/
+    color: #a793f7; /*cor do texto do centeudo*/
     padding: 15px;
     border-radius: 5px; /*borda arredondadas do conteudo*/
     font-size: 14px;
@@ -60,23 +60,39 @@ section.title-container {
 
 /*margem entre os itens*/
 .accordion-item {
+    background-color: rgb(8, 4, 25);
     border: none; /*remove as bordas padrão*/
     margin-bottom: 10px; /*espaçamento entre os itens*/
+}
+.hr.divider {
+    border: none;
+    height: 2px;
+    background-color: rgb(8, 4, 25);
+    border-top: 1px solid #a793f7;
+    margin: 15px 0;
+    width: 100%;
+    opacity: 0.5;
+}
+.accordion-img {
+    max-width: 522px;
+    width: 100%; /* ajustar o tamanho da imagem */
+    height: auto; /*  proporção */
+
 }
 
 /* ajuste de imagem */
 .accordion-img img {
-    width: 250px; /* ajustar o tamanho da imagem */
+    max-width: 522px;
+    width: 100%; /* ajustar o tamanho da imagem */
     height: auto; /*  proporção */
     border-radius: 8px; /* Arredonda as bordas da imagem */
-    object-fit: cover; /* Faz a imagem se ajustar ao tamanho sem deformar */
 }
 
 /* ajustes de texto */
 .accordion-text p {
     font-size: 1rem; /* Tamanho da fonte */
     line-height: 1.5; /* Espaçamento entre linhas */
-    color: #333; /* Cor do texto */
+    color: #a793f7; /* Cor do texto */
     margin-top: 10px; /* Espaço acima do texto */
 }
 
@@ -87,16 +103,17 @@ section.title-container {
     gap: 20px; /* Espaçamento entre a imagem e o texto */
 }
 
+
 /* Responsividade */
 @media (max-width: 768px) {
     .accordion-body {
-        flex-direction: column; /* Coloca a imagem e o texto em coluna em telas menores */
-        align-items: flex-start; /* Alinha os itens no começo */
+            flex-direction: column; /* Coloca a imagem e o texto em coluna em telas menores */
+            align-items: flex-start; /* Alinha os itens no começo */
     }
 
     .accordion-img img {
-        width: 100%; /* Imagem fica maior em telas pequenas */
-        max-width: 200px; /* Limita o tamanho máximo da imagem */
+            width: 100%; /* Imagem fica maior em telas pequenas */
+            max-width: 200px; /* Limita o tamanho máximo da imagem */
     }
 }
 
