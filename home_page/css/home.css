@@ -131,7 +131,9 @@ section.number-container {
     position: relative;
     display: flex;
     flex-direction: row;
-    height: 623px;
+    max-width: 1280px;
+    width: 100%;
+    height: 632px;
     gap: 20px;
 }
 .btn-feedback .carousel-control-next {
@@ -142,15 +144,20 @@ section.number-container {
     left: -40px;
     font-size: 22px;
 }
-.feedback-container {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
+.feedback-container .carousel-inner {
+    max-width: 1280px;
+    width: 100%;
+    max-height: 724px;
+}
+.feedback-container.carosel-item {
+    max-width: 1280px;
+    width: 100%;
+    max-height: auto;
 }
 #feedback-img {
     max-width: 413px;
     width: 100%;
-    max-height: 623px;
+    max-height: 632px;
     height: 100%;
 }
 #feedback-img img {
@@ -161,7 +168,7 @@ section.number-container {
 #feedback-text {
     max-width: 847px;
     width: 100%;
-    max-height: 623px;
+    max-height: 632px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -173,7 +180,7 @@ section.number-container {
 #feedback-text h3 {
     margin: 0;
     padding: 40px;
-    max-width: 767px;
+    max-width: 847px;
     width: 100%;
     max-height: 408px;
     height: 100%;
@@ -184,4 +191,49 @@ section.number-container {
 #feedback-text p {
     margin: 0;
     padding: 0 0 40px 40px;
+}
+
+/* Section bannwe */
+.banner-container {
+    position: relative;
+    max-width: 1280px;
+    width: 100%;
+    height: 632px;
+    margin-top: 400px;
+    background-image: url('../img/baner_01.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+}
+.banner-container h3 {
+    position: absolute;
+    max-width: 482px;
+    font-size: 40px;
+    color: var(--color-quaternary);
+    bottom: 181px;
+    right: 40px;
+    width: 100%;
+    height: auto;
+}
+.banner-container button {
+    position: absolute;
+    bottom: 85px;
+    right: 338px;
+}
+#btn-banner {
+    width: 184px;
+    height: 52px;
+    background-color: var(--color-tertiary);
+    color: var(--color-primary);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#btn-banner:hover {
+    background-color: transparent;
+    border: 1px solid var(--color-tertiary);
+    color: var(--color-tertiary);
+    transform: scale(1.05);
 }
