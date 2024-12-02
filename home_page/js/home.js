@@ -48,7 +48,7 @@ function iniciarContador(numeroId, valorFinal, incremento) {
 
 window.addEventListener('scroll', function () {
     const contadores = [
-        { id: 'first-number', valorFinal: 1200, incremento: 50 },
+        { id: 'first-number', valorFinal: 1200, incremento: 40 },
         { id: 'second-number', valorFinal: 20, incremento: 1 },
         { id: 'third-number', valorFinal: 10, incremento: 1 },
         { id: 'fourth-number', valorFinal: 3, incremento: 1 },

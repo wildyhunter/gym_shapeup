@@ -154,13 +154,12 @@
     .input-container input {
         height: 52px;
     }
-    .input-container i {
+    .input-container img {
         width: 20px;
         height: 20px;
         position: absolute;
         left: 24px;
         top: 16px;
-        font-size: 18px;
         color: #aaa;
     }
     /* Second Section */
