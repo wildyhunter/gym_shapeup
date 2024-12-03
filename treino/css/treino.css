@@ -38,7 +38,6 @@ section.title-container {
     background-color: rgb(8, 4, 25); /* fundo do botão */
     color: #a793f7; /* cor do texto */
     font-size: 40px;
-    font-weight: 200;
     border: none;
     margin-bottom: 10px;
     border-radius: 5px; /*borda arredonda */
@@ -80,7 +79,7 @@ section.title-container {
 
 }
 
-/* ajuste de imagem */
+/* ajuste de imagem DO ACORDEÃO */
 .accordion-img img {
     max-width: 522px;
     width: 100%; /* ajustar o tamanho da imagem */
@@ -88,9 +87,9 @@ section.title-container {
     border-radius: 8px; /* Arredonda as bordas da imagem */
 }
 
-/* ajustes de texto */
+/* ajustes de texto DO ACORDEÃO */
 .accordion-text p {
-    font-size: 1rem; /* Tamanho da fonte */
+    font-size: 25px; /* Tamanho da fonte */
     line-height: 1.5; /* Espaçamento entre linhas */
     color: #a793f7; /* Cor do texto */
     margin-top: 10px; /* Espaço acima do texto */
@@ -118,6 +117,7 @@ section.title-container {
     object-fit: cover; 
     border-radius: 10px; 
     margin-bottom: 15px; 
+    
 } 
 
 
