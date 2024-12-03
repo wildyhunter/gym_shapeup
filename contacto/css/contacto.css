@@ -125,6 +125,7 @@ section.title-container {
 #threeContacts {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
   margin-top: 20px;
   margin-bottom: 248px;
 }
@@ -137,7 +138,8 @@ section.title-container {
 .contacts__item {
   flex: 1 1 calc(33.33% - 20px);
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  border-radius: 40px;
 }
 
 /* Card principal */
@@ -160,9 +162,8 @@ section.title-container {
 /* Conteúdo do card */
 .card__content {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 40px; /* Distância do topo */
+  left: 40px; /* Distância do lado esquerdo */
   text-align: left;
   z-index: 2;
 }
@@ -170,24 +171,28 @@ section.title-container {
 /* Cabeçalho do card */
 .card__header {
   display: flex;
-  align-items: center;
+  align-items: left;
+  gap: 16px;
 }
 
 /* Ícone do card */
 .card__icon {
-  height: 32px;
-  width: 32px;
+  height: 24px;
+  width: 24px;
   flex-shrink: 0;
 }
 
+/* Título do card */
 .card__title {
   margin: 0;
   font-size: 24px;
 }
 
+/* Texto do card */
 .card__text {
   margin: 5px 0;
   font-size: 16px;
+  font-weight: 400;
 }
 
 /*.............................................Mapa*/
