@@ -355,14 +355,13 @@ section.final-banner {
 
 /* Media queries */
 @media screen and (max-width: 600px) {
-
     body {
         background-image: linear-gradient(
-            to bottom,
-            rgba(255, 255, 255, 0) 90%,
-            rgba(8, 4, 25, 1) 100%
-        ),
-        url('../img/backgroound_body_moble.png');
+                to bottom,
+                rgba(255, 255, 255, 0) 90%,
+                rgba(8, 4, 25, 1) 100%
+            ),
+            url('../img/backgroound_body_moble.png');
         background-position: center top;
         background-size: cover;
     }
@@ -384,5 +383,4 @@ section.final-banner {
         flex-direction: column;
         width: 100%;
     }
-
 }
