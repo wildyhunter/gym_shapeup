@@ -104,19 +104,6 @@ section.title-container {
 }
 
 
-/* Responsividade */
-@media (max-width: 768px) {
-    .accordion-body {
-            flex-direction: column; /* Coloca a imagem e o texto em coluna em telas menores */
-            align-items: flex-start; /* Alinha os itens no começo */
-    }
-
-    .accordion-img img {
-            width: 100%; /* Imagem fica maior em telas pequenas */
-            max-width: 200px; /* Limita o tamanho máximo da imagem */
-    }
-}
-
 /* Container da seção de instrutores */
 
 .instrutores-container h2 { 
