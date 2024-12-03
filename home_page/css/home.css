@@ -52,10 +52,9 @@ section.title-container {
 section.number-container {
     display: flex;
     flex-direction: column;
-    max-width: 1280px;
     width: 100%;
 }
-.numbers-container {
+#numbers-container {
     display: flex;
     gap: 20px;
 }
@@ -351,4 +350,38 @@ section.final-banner {
     color: var(--color-quaternary);
     bottom: 69px;
     right: 709px;
+}
+
+/* Media queries */
+@media screen and (max-width: 600px) {
+
+    body {
+        background-image: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0) 90%,
+            rgba(8, 4, 25, 1) 100%
+        ),
+        url('../img/backgroound_body_moble.png');
+        background-position: center top;
+        background-size: cover;
+    }
+    .main-container {
+        max-width: 342px;
+        width: 100%;
+    }
+    section.title-container {
+        max-width: 324px;
+        padding: 300px 0 472px 0;
+    }
+    .main-container .title-container h1 {
+        font-size: 48px;
+    }
+
+    /* Number Container */
+    section.number-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
 }
