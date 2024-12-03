@@ -49,13 +49,14 @@ section.title-container {
 }
 
 /* Second Section numbers*/
-section.number-container {
+#number-container {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
-#numbers-container {
+.numbers-container {
     display: flex;
+    flex-direction: row;
     gap: 20px;
 }
 #first-number,
