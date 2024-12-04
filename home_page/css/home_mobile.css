@@ -102,6 +102,7 @@
         width: 24px;
         height: 2px;
         border: 1px solid white;
+        background-color: white;
         margin-top: 8px;
         transition: 0.3s;
         position: relative;
