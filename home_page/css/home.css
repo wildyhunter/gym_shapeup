@@ -502,7 +502,7 @@ section.final-banner {
     #feedback-text {
         max-width: 342px;
         width: 100%;
-        min-height: 330px;
+        height: 280px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -517,7 +517,8 @@ section.final-banner {
         width: 100%;
         max-height: 308px;
         height: 100%;
-        font-size: 20px;
+        font-size: 16px;
+        letter-spacing: 1.2px;
         font-weight: 200;
         line-height: 128%;
     }
