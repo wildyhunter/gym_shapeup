@@ -17,17 +17,18 @@ body {
 main {
     max-width: 1280px;
     width: 100%;
+    height: auto;
 }
 
 section.title-container {
     display: flex;
     max-width: 983px;
     width: 100%;
-    padding: 414px 0 472px 0;
+    padding: 414px 0 272px 0;
 
 }
 .main-container .title-container h1 {
-    font-size: 64px;
+    font-size: 96px;
     color: var(--color-quaternary);
     font-weight: bold;
     margin: 0;
@@ -35,18 +36,23 @@ section.title-container {
 
 /* estilo do acordeão */ 
 .accordion-button { 
+    padding: 98px 0 98px 0;
     background-color: rgb(8, 4, 25); /* fundo do botão */
     color: #a793f7; /* cor do texto */
     font-size: 40px;
-    border: none;
-    margin-bottom: 10px;
-    border-radius: 5px; /*borda arredonda */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     transition: all 0.3s ease;
 }
 
+
 .accordion-button:not(.collapsed) {
     background-color: rgb(8, 4, 25); /*fundo ao expandir*/
-    color: #a793f7; /*cor do texto ao expandir*/
+    border: none!important;
+    color: #ffffff!important;
+    
+}
+button.accordion-button::after {
+    filter: brightness(0) saturate(100%) invert(100%)!important;
 }
 
 .accordion-body {
@@ -59,16 +65,19 @@ section.title-container {
 
 /*margem entre os itens*/
 .accordion-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1280px;
+    width: 100%;
     background-color: rgb(8, 4, 25);
     border: none; /*remove as bordas padrão*/
-    margin-bottom: 10px; /*espaçamento entre os itens*/
+    height: auto;
 }
-
 .accordion-img {
     max-width: 522px;
     width: 100%; /* ajustar o tamanho da imagem */
     height: auto; /*  proporção */
-
 }
 
 /* ajuste de imagem DO ACORDEÃO */
@@ -95,26 +104,45 @@ section.title-container {
 }
 
 /* INSTRUTORES */
-/* Ajusta o layout para os cards ficarem um ao lado do outro */
-.instrutores {
-    display: flex;   /* Usando Flexbox */
-    gap: 20px;   /* Espaçamento entre os cards */
-    justify-content: center;     /* Centraliza os cards horizontalmente */
-    flex-wrap: wrap;   /* Permite que os cards que não cabem na linha, desçam para a próxima linha */
-    margin-top: 20px;   /* Adiciona um pouco de espaço no topo */
-}
-
 /* Container da seção de instrutores */
 .instrutores-container h2 { 
     font-size: 40px; 
     margin-bottom: 10px;
     color: #f5f5f5; 
+    
 } 
 
+/* Ajusta o layout para os cards ficarem um ao lado do outro */
+.instrutores {
+    
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 40px;
+    display: flex;   /* Usando Flexbox */
+    gap: 20px;   /* Espaçamento entre os cards */
+    justify-content: center;     /* Centraliza os cards horizontalmente */
+    flex-wrap: wrap;   /* Permite que os cards que não cabem na linha, desçam para a próxima linha */
+    margin-top: 20px;   /* Adiciona um pouco de espaço no topo */
+    flex-direction: column;
+    background-color: #a793f7;
+    max-width: 413px;/* imagem de acordo com o figma */
+    height: 413px; 
+    
+}
+
+
 .instrutor-card {
-    width: 30%;      /* ajusta a largura para que fiquem mais próximos (ajuste conforme necessário) */
-    text-align: center;  /* alinha o texto dentro do card */
-    margin-bottom: 30px;   /* espaço inferior entre os cards */
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 40px;
+    
+    gap: 20px;   /* Espaçamento entre os cards */
+    justify-content: center;     /* Centraliza os cards horizontalmente */
+    flex-wrap: wrap;   /* Permite que os cards que não cabem na linha, desçam para a próxima linha */
+    margin-top: 20px;   /* Adiciona um pouco de espaço no topo */
+    
+    background-color: #a793f7;
+    
 }
 
 .instrutor-card img { 
@@ -123,6 +151,7 @@ section.title-container {
     object-fit: cover; /* ajusta a imagem para cobrir o espaço do card */
     border-radius: 10px; 
     margin-bottom: 15px; 
+    
     
 } 
 
