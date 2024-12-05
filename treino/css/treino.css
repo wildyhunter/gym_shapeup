@@ -289,21 +289,19 @@ td {
     }
 
     /* Section Table */
-    .table-horarios,
     .table-container {
-        max-width: 1050px;
         width: 100%;
         overflow-x: scroll;
         -webkit-overflow-scrolling: touch;
-        white-space: nowrap;
+        margin-bottom: 150px;
+    }
+    .table-horarios {
+        width: 1050px;
+        table-layout: fixed;
     }
     .table-horarios th,
     .table-horarios td {
         font-size: 14px;
-    }
-    .table-container {
-        width: 100%;
-        margin-bottom: 150px;
     }
     .table-container th,
     td {
