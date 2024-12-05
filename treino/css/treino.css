@@ -6,13 +6,16 @@
 }
 
 body {
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 90%, rgba(8, 4, 25, 1) 100%), 
-    url('../img/backgroud-body.png');;
+    background-image: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0) 90%,
+            rgba(8, 4, 25, 1) 100%
+        ),
+        url('../img/backgroud-body.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     align-items: center;
-    
 }
 main {
     display: flex;
@@ -20,7 +23,6 @@ main {
     flex: 1;
     max-width: 1280px;
     width: 100%;
-    
 }
 
 section.title-container {
@@ -28,7 +30,6 @@ section.title-container {
     max-width: 983px;
     width: 100%;
     padding: 414px 0 272px 0;
-
 }
 .main-container .title-container h1 {
     font-size: 96px;
@@ -37,12 +38,12 @@ section.title-container {
     margin: 0;
 }
 
-/* estilo do acordeão */ 
+/* estilo do acordeão */
 div.container {
     margin: 0;
     padding: 0;
 }
-.accordion-button { 
+.accordion-button {
     padding: 98px 0 98px 0;
     background-color: rgb(8, 4, 25);
     color: #a793f7;
@@ -51,21 +52,19 @@ div.container {
     transition: all 0.3s ease;
 }
 
-
 .accordion-button:not(.collapsed) {
-    background-color: rgb(8, 4, 25); 
-    border: none!important;
-    color: #ffffff!important;
-    
+    background-color: rgb(8, 4, 25);
+    border: none !important;
+    color: #ffffff !important;
 }
 button.accordion-button::after {
-    filter: brightness(0) saturate(100%) invert(100%)!important;
+    filter: brightness(0) saturate(100%) invert(100%) !important;
 }
 
 .accordion-body {
-    background-color: rgb(8, 4, 25); 
+    background-color: rgb(8, 4, 25);
     color: #a793f7;
-    border-radius: 5px; 
+    border-radius: 5px;
     font-size: 14px;
 }
 
@@ -76,35 +75,33 @@ button.accordion-button::after {
     max-width: 1280px;
     width: 100%;
     background-color: rgb(8, 4, 25);
-    border: none; 
+    border: none;
     height: auto;
 }
 .accordion-img {
     max-width: 522px;
-    width: 100%; 
-    height: auto; 
+    width: 100%;
+    height: auto;
 }
 
 .accordion-img img {
     max-width: 522px;
-    width: 100%; 
-    height: auto; 
+    width: 100%;
+    height: auto;
     border-radius: 8px;
 }
 
-
 .accordion-text p {
-    font-size: 25px; 
-    line-height: 1.5; 
-    color: #a793f7; 
+    font-size: 25px;
+    line-height: 1.5;
+    color: #a793f7;
     max-width: 400px;
 }
 
-
 .accordion-body {
-    display: flex; 
-    align-items: center; 
-    gap: 20px; 
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 /* Section title */
 .title {
@@ -170,7 +167,6 @@ div.img-container-instructor {
     margin-top: 40px;
 }
 
-
 /* Section Table */
 .table-container {
     color: var(--color-quaternary);
@@ -180,7 +176,8 @@ div.img-container-instructor {
     margin-bottom: 248px;
 }
 
-.table-container th,td {
+.table-container th,
+td {
     width: 180px;
     height: 100px;
     border: 1px solid rgba(255, 255, 255, 0.5);
@@ -196,7 +193,6 @@ div.img-container-instructor {
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-
 /* Media queries */
 @media screen and (max-width: 748px) {
     body {
@@ -208,7 +204,9 @@ div.img-container-instructor {
             url('../img/background-body-mobile.png');
         background-position: center top;
         background-size: cover;
+        overflow-x: hidden;
     }
+
     .main-container {
         width: 342px;
     }
@@ -222,7 +220,7 @@ div.img-container-instructor {
     }
 
     /* Accordion */
-    .accordion-button { 
+    .accordion-button {
         padding: 60px 0 60px 0;
         font-size: 24px;
     }
@@ -232,7 +230,7 @@ div.img-container-instructor {
         font-size: 14px;
     }
     .accordion-text p {
-        font-size: 16px; 
+        font-size: 16px;
     }
 
     /* Section title */
@@ -266,7 +264,7 @@ div.img-container-instructor {
         height: 342px;
         border-radius: 40px;
     }
-    div.img-container-instructor img{
+    div.img-container-instructor img {
         width: 100%;
         height: 100%;
     }
@@ -291,23 +289,25 @@ div.img-container-instructor {
     }
 
     /* Section Table */
-    .table-horarios, .table-container {
+    .table-horarios,
+    .table-container {
         max-width: 1050px;
         width: 100%;
-        overflow-x: auto;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
         white-space: nowrap;
     }
-    .table-horarios th, 
+    .table-horarios th,
     .table-horarios td {
-        font-size: 14px; /* Reduz tamanho da fonte em telas pequenas */
+        font-size: 14px;
     }
     .table-container {
         width: 100%;
         margin-bottom: 150px;
     }
-    .table-container th,td {
+    .table-container th,
+    td {
         min-width: 150px;
         height: 70px;
     }
 }
-

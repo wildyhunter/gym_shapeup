@@ -29,19 +29,20 @@
     .nav-link {
         display: block;
         position: absolute;
-        top: 80px;
+        top: -20px;
         right: 0;
         width: 100%;
         height: 0;
         background-color: var(--color-primary);
         z-index: 3;
-        padding-top: 100px;
+        padding-top: 160px;
         transition: 0.3s;
         visibility: hidden;
         overflow-y: hidden;
+        z-index: -1;
     }
     .nav-link.active {
-        height: 570px;
+        height: 100dvh;
         visibility: visible;
     }
     .nav-link ul {
@@ -52,6 +53,9 @@
     }
     .nav-link ul li {
         padding-bottom: 48px;
+    }
+    .nav-link ul li a{
+        font-size: 24px;
     }
     #start-session {
         position: absolute;
