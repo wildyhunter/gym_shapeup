@@ -16,7 +16,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     align-items: center;
-    overflow-x: hidden;
 }
 
 main {
@@ -210,7 +209,6 @@ td {
 
     .main-container {
         width: 342px;
-        overflow-x: hidden;
     }
     section.title-container {
         max-width: 324px;
