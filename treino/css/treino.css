@@ -198,7 +198,7 @@ div.img-container-instructor {
 
 
 /* Media queries */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 748px) {
     body {
         background-image: linear-gradient(
                 to bottom,
@@ -291,16 +291,23 @@ div.img-container-instructor {
     }
 
     /* Section Table */
-    .table-container {
-        width: auto;
-        margin-bottom: 200px;
+    .table-horarios, .table-container {
+        max-width: 1050px;
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
     }
-    
+    .table-horarios th, 
+    .table-horarios td {
+        font-size: 14px; /* Reduz tamanho da fonte em telas pequenas */
+    }
+    .table-container {
+        width: 100%;
+        margin-bottom: 150px;
+    }
     .table-container th,td {
         min-width: 150px;
         height: 70px;
-        overflow-y: auto;
-        white-space: normal;
     }
 }
 
