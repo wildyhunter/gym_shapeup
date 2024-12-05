@@ -67,7 +67,6 @@ button.accordion-button::after {
     color: #a793f7;
     border-radius: 5px; 
     font-size: 14px;
-
 }
 
 .accordion-item {
@@ -98,7 +97,6 @@ button.accordion-button::after {
     font-size: 25px; 
     line-height: 1.5; 
     color: #a793f7; 
-
     max-width: 400px;
 }
 
@@ -148,7 +146,7 @@ div.img-container-instructor {
     position: absolute;
     width: 413px;
     height: 413px;
-    border-radius: 50px;
+    border-radius: 40px;
 }
 
 .text-card-container {
@@ -199,10 +197,110 @@ div.img-container-instructor {
 }
 
 
+/* Media queries */
+@media screen and (max-width: 600px) {
+    body {
+        background-image: linear-gradient(
+                to bottom,
+                rgba(255, 255, 255, 0) 90%,
+                rgba(8, 4, 25, 1) 100%
+            ),
+            url('../img/background-body-mobile.png');
+        background-position: center top;
+        background-size: cover;
+    }
+    .main-container {
+        width: 342px;
+    }
+    section.title-container {
+        max-width: 324px;
+        width: 100%;
+        padding: 300px 0 50px 0;
+    }
+    .main-container .title-container h1 {
+        font-size: 48px;
+    }
 
+    /* Accordion */
+    .accordion-button { 
+        padding: 60px 0 60px 0;
+        font-size: 24px;
+    }
+    .accordion-body {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+    }
+    .accordion-text p {
+        font-size: 16px; 
+    }
 
+    /* Section title */
+    .title {
+        margin-top: 200px;
+    }
 
+    /* INSTRUTORES */
+    section.instrutor-container {
+        max-width: 342px;
+        width: 100%;
+        height: auto;
+    }
+    .first-section-instructor,
+    .second-section-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        gap: 0;
+        margin: 0;
+    }
+    .instrutor-card {
+        width: 342px;
+        height: 684px;
+        margin-top: 20px;
+    }
+    div.img-container-instructor {
+        position: absolute;
+        width: 342px;
+        height: 342px;
+        border-radius: 40px;
+    }
+    div.img-container-instructor img{
+        width: 100%;
+        height: 100%;
+    }
+    .text-card-container {
+        position: absolute;
+        width: 342px;
+        top: 342px;
+    }
+    .text-card-container h3 {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .text-card-container h6 {
+        margin-left: 20px;
+    }
+    .text-card-container p {
+        width: 302px;
+        font-size: 16px;
+        height: 250px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
 
-
-
+    /* Section Table */
+    .table-container {
+        width: auto;
+        margin-bottom: 200px;
+    }
+    
+    .table-container th,td {
+        min-width: 150px;
+        height: 70px;
+        overflow-y: auto;
+        white-space: normal;
+    }
+}
 
