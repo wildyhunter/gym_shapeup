@@ -175,18 +175,26 @@ div.img-container-instructor {
 .table-container {
     color: var(--color-quaternary);
     font-size: 16px;
+    max-width: 1280px;
+    width: 100%;
+    margin-bottom: 248px;
 }
 
-.table-container th, tr, td {
-    max-width: 183px;
-    width: 100%;
+.table-container th,td {
+    width: 180px;
     height: 100px;
     border: 1px solid rgba(255, 255, 255, 0.5);
     text-align: center;
-    padding: 37px 53px;
+    vertical-align: middle;
 }
-
-
+.table-container th,
+.color {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.table-container tr {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
 
 
 
