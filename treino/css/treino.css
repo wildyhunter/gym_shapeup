@@ -195,6 +195,10 @@ td {
 
 /* Media queries */
 @media screen and (max-width: 748px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
     body {
         background-image: linear-gradient(
                 to bottom,
