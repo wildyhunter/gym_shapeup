@@ -195,10 +195,6 @@ td {
 
 /* Media queries */
 @media screen and (max-width: 748px) {
-    html,
-    body {
-        overflow-x: hidden;
-    }
     body {
         background-image: linear-gradient(
                 to bottom,
@@ -208,6 +204,9 @@ td {
             url('../img/background-body-mobile.png');
         background-position: center top;
         background-size: cover;
+    }
+    body {
+        overflow-x: hidden;
     }
     .main-container {
         width: 342px;
