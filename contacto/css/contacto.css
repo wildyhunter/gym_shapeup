@@ -246,7 +246,7 @@ section.map-container iframe {
     flex-direction: column;
     width: 342px;
     padding: 24px 20px;
-    margin: 0 auto;
+    margin: 100px auto auto;
     gap: 24px;
   }
 
