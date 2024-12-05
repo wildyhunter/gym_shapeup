@@ -54,6 +54,9 @@
     .nav-link ul li {
         padding-bottom: 48px;
     }
+    .nav-link ul li a{
+        font-size: 24px;
+    }
     #start-session {
         position: absolute;
         bottom: 30px;
