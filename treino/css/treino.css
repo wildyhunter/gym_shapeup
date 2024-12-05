@@ -17,6 +17,9 @@ body {
     background-repeat: no-repeat;
     align-items: center;
 }
+html {
+    overflow-x: hidden;
+}
 main {
     display: flex;
     flex-direction: column;
@@ -204,7 +207,6 @@ td {
             url('../img/background-body-mobile.png');
         background-position: center top;
         background-size: cover;
-        overflow-x: hidden;
     }
 
     .main-container {
