@@ -67,6 +67,7 @@ button.accordion-button::after {
     color: #a793f7;
     border-radius: 5px; 
     font-size: 14px;
+
 }
 
 .accordion-item {
@@ -97,7 +98,8 @@ button.accordion-button::after {
     font-size: 25px; 
     line-height: 1.5; 
     color: #a793f7; 
-    margin-top: 10px;
+
+    max-width: 400px;
 }
 
 
