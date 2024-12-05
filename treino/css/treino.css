@@ -15,9 +15,12 @@ body {
     
 }
 main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     max-width: 1280px;
     width: 100%;
-    height: auto;
+    
 }
 
 section.title-container {
@@ -35,10 +38,14 @@ section.title-container {
 }
 
 /* estilo do acordeão */ 
+div.container {
+    margin: 0;
+    padding: 0;
+}
 .accordion-button { 
     padding: 98px 0 98px 0;
-    background-color: rgb(8, 4, 25); /* fundo do botão */
-    color: #a793f7; /* cor do texto */
+    background-color: rgb(8, 4, 25);
+    color: #a793f7;
     font-size: 40px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     transition: all 0.3s ease;
@@ -46,7 +53,7 @@ section.title-container {
 
 
 .accordion-button:not(.collapsed) {
-    background-color: rgb(8, 4, 25); /*fundo ao expandir*/
+    background-color: rgb(8, 4, 25); 
     border: none!important;
     color: #ffffff!important;
     
@@ -56,14 +63,12 @@ button.accordion-button::after {
 }
 
 .accordion-body {
-    background-color: rgb(8, 4, 25); /*fundo do conteúdo*/
-    color: #a793f7; /*cor do texto do centeudo*/
-    padding: 15px;
-    border-radius: 5px; /*borda arredondadas do conteudo*/
+    background-color: rgb(8, 4, 25); 
+    color: #a793f7;
+    border-radius: 5px; 
     font-size: 14px;
 }
 
-/*margem entre os itens*/
 .accordion-item {
     display: flex;
     flex-direction: column;
@@ -71,62 +76,123 @@ button.accordion-button::after {
     max-width: 1280px;
     width: 100%;
     background-color: rgb(8, 4, 25);
-    border: none; /*remove as bordas padrão*/
+    border: none; 
     height: auto;
 }
 .accordion-img {
     max-width: 522px;
-    width: 100%; /* ajustar o tamanho da imagem */
-    height: auto; /*  proporção */
+    width: 100%; 
+    height: auto; 
 }
 
-/* ajuste de imagem DO ACORDEÃO */
 .accordion-img img {
     max-width: 522px;
-    width: 100%; /* ajustar o tamanho da imagem */
-    height: auto; /*  proporção */
-    border-radius: 8px; /* Arredonda as bordas da imagem */
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px;
 }
 
-/* ajustes de texto DO ACORDEÃO */
+
 .accordion-text p {
-    font-size: 25px; /* Tamanho da fonte */
-    line-height: 1.5; /* Espaçamento entre linhas */
-    color: #a793f7; /* Cor do texto */
-    margin-top: 10px; /* Espaço acima do texto */
+    font-size: 25px; 
+    line-height: 1.5; 
+    color: #a793f7; 
+    margin-top: 10px;
 }
 
-/* Ajustes de layout */
+
 .accordion-body {
-    display: flex; /* Organiza o layout em linha */
-    align-items: center; /* Alinha verticalmente */
-    gap: 20px; /* Espaçamento entre a imagem e o texto */
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+}
+/* Section title */
+.title {
+    width: 100%;
+    height: 200px;
+    margin-top: 248px;
+    color: var(--color-quaternary);
 }
 
 /* INSTRUTORES */
 /* Container da seção de instrutores */
-.instrutores-container h2 { 
+section.instrutor-container {
+    max-width: 1280px;
+    width: 100%;
+    height: 1507px;
+}
+.first-section-instructor {
+    width: 100%;
+    height: 743px;
+    display: flex;
+    gap: 21px;
+}
+.second-section-container {
+    width: 100%;
+    height: 743px;
+    margin-top: 21px;
+    display: flex;
+    gap: 21px;
+}
+.instrutor-card {
+    position: relative;
+    top: 0;
+    width: 413px;
+    height: 743px;
+    background-color: #a793f7;
+    border-radius: 40px;
+}
+div.img-container-instructor {
+    position: absolute;
+    width: 413px;
+    height: 413px;
+    border-radius: 50px;
+}
+
+.text-card-container {
+    position: absolute;
+    width: 413px;
+    top: 413px;
+}
+
+.text-card-container h3 {
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.text-card-container h6 {
+    margin-left: 40px;
+}
+.text-card-container p {
+    width: 333px;
+    font-size: 16px;
+    height: 154px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+
+/* .instrutores-container h2 { 
     font-size: 2rem; 
     margin-bottom: 40px;
     color: #f5f5f5;    
 }
 
-/* Ajusta o layout para os cards ficarem um ao lado do outro */
+
 .instrutores-container{
     margin-top: 200px;
     height: 813px;    
 
 }
 .instrutores {
-    display: flex;   /* Usando Flexbox */
-    justify-content: center;     /* Centraliza os cards horizontalmente */
-    gap: 20px;   /* Espaçamento entre os cards */
-    flex-wrap: wrap;   /* Permite que os cards que não cabem na linha, desçam para a próxima linha */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: flex-start;
     border-radius: 40px;
-    margin: 100px 0;   /* Adiciona um pouco de espaço no topo */
-    max-width: 1280px;/* imagem de acordo com o figma */
+    margin: 100px 0;
+    max-width: 1280px;
     height: 743px; 
     
 }
@@ -137,13 +203,13 @@ button.accordion-button::after {
     background-color: #a793f7;
     border-radius: 50px;
     flex-direction: column;
-    align-items: flex-start; /* Espaçamento entre os cards */
-    justify-content: center;     /* Centraliza os cards horizontalmente */
-    flex-wrap: wrap;   /* Permite que os cards que não cabem na linha, desçam para a próxima linha */   /* Adiciona um pouco de espaço no topo */
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
    
 }
 .instrutor-card img { 
-    max-width: 413px;/* imagem de acordo com o figma */
+    max-width: 413px;
     height: 413px; 
     border-radius: 10px; 
        
@@ -162,7 +228,7 @@ button.accordion-button::after {
     font-size: 16px;
     height: 154px; 
     padding: 40px;
-}
+} */
 
 
 
