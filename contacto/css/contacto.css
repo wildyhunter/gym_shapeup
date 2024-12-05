@@ -216,7 +216,7 @@ section.map-container iframe {
 
 /*.............................................Media Query Pagina Contactos*/
 
-@media (max-width: 600px) {
+@media (max-width: 748px) {
   body {
     background-image: linear-gradient(
         to bottom,
