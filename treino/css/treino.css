@@ -16,10 +16,9 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     align-items: center;
-}
-html {
     overflow-x: hidden;
 }
+
 main {
     display: flex;
     flex-direction: column;
