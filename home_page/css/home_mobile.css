@@ -29,7 +29,7 @@
     .nav-link {
         display: block;
         position: absolute;
-        top: -25px;
+        top: -20px;
         right: 0;
         width: 100%;
         height: 0;
@@ -42,7 +42,7 @@
         z-index: -1;
     }
     .nav-link.active {
-        height: calc(101vh);
+        height: 100dvh;
         visibility: visible;
     }
     .nav-link ul {
