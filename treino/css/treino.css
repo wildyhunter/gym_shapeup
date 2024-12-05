@@ -171,64 +171,20 @@ div.img-container-instructor {
 }
 
 
-/* .instrutores-container h2 { 
-    font-size: 2rem; 
-    margin-bottom: 40px;
-    color: #f5f5f5;    
-}
-
-
-.instrutores-container{
-    margin-top: 200px;
-    height: 813px;    
-
-}
-.instrutores {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: flex-start;
-    border-radius: 40px;
-    margin: 100px 0;
-    max-width: 1280px;
-    height: 743px; 
-    
-}
-
-.instrutor-card {
-    width: 413px;
-    height: 743px;
-    background-color: #a793f7;
-    border-radius: 50px;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    flex-wrap: wrap;
-   
-}
-.instrutor-card img { 
-    max-width: 413px;
-    height: 413px; 
-    border-radius: 10px; 
-       
-}
-.instrutor-card h3{    
-    padding: 0 40px;
-    margin-top: 15px;
-}
-
-.instrutor-card h6{    
-    padding: 0 40px;
-}
-
-.instrutor-card p{
-    width: 333px;
+/* Section Table */
+.table-container {
+    color: var(--color-quaternary);
     font-size: 16px;
-    height: 154px; 
-    padding: 40px;
-} */
+}
+
+.table-container th, tr, td {
+    max-width: 183px;
+    width: 100%;
+    height: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    text-align: center;
+    padding: 37px 53px;
+}
 
 
 
