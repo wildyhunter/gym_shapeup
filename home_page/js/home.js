@@ -70,3 +70,33 @@ window.addEventListener('scroll', function () {
         }
     });
 });
+
+// Efeito scrollreveal
+window.revel = ScrollReveal({
+    reset: true,
+})
+
+revel.reveal('.efeito-scrollReveal', {
+    origin: 'left',
+    distance: '90px',
+    duration: 1000,
+    delay: 200
+})
+revel.reveal('.efeito-scrollReveal1', {
+    origin: 'bottom',
+    distance: '150px',
+    duration: 1000,
+    delay: 400
+})
+revel.reveal('.efeito-scrollReveal2', {
+    origin: 'bottom',
+    distance: '150px',
+    duration: 1500,
+    delay: 400
+})
+revel.reveal('.efeito-scrollReveal3', {
+    origin: 'bottom',
+    distance: '150px',
+    duration: 2000,
+    delay: 400
+})

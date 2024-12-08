@@ -358,6 +358,14 @@ section.final-banner {
     right: 709px;
 }
 
+/* Efeito ScrollRevel */
+.efeito-scrollReveal,
+.efeito-scrollReveal1,
+.efeito-scrollReveal2,
+.efeito-scrollReveal3 {
+    visibility: hidden;
+}
+
 /* Media queries */
 @media screen and (max-width: 600px) {
     body {
