@@ -367,7 +367,7 @@ section.final-banner {
 }
 
 /* Media queries */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 748px) {
     body {
         background-image: linear-gradient(
                 to bottom,
