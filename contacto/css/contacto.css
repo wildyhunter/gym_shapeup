@@ -45,7 +45,7 @@ section.title-container {
   margin-top: 96px;
 }
 
-.main-container .title-container h2 {
+.main-container .title-container h1 {
   font-size: 64px;
   color: var(--color-quaternary);
   font-weight: bold;

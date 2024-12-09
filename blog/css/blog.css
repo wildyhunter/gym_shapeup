@@ -44,6 +44,7 @@ section.title-container {
 }
 .main-container .title-container h1 {
     font-size: 40px;
+    max-width: 650px;
     color: var(--color-quaternary);
     font-weight: bold;
     margin: 0;

@@ -33,7 +33,7 @@ section.title-container {
     padding: 414px 0 272px 0;
 }
 .main-container .title-container h1 {
-    font-size: 96px;
+    font-size: 64px;
     color: var(--color-quaternary);
     font-weight: bold;
     margin: 0;
