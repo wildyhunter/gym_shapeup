@@ -53,6 +53,9 @@ div.container {
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     transition: all 0.3s ease;
 }
+.accordion-button:focus {
+    box-shadow: none !important;
+}
 
 .accordion-button:not(.collapsed) {
     background-color: rgb(8, 4, 25);
