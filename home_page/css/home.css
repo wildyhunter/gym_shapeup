@@ -40,6 +40,7 @@ section.title-container {
     max-width: 983px;
     width: 100%;
     padding: 414px 0 472px 0;
+    margin-top: 96px;
 }
 .main-container .title-container h1 {
     font-size: 96px;

@@ -42,6 +42,7 @@ section.title-container {
   width: 100%;
   padding: 414px 0 472px 0;
   max-width: 70ch;
+  margin-top: 96px;
 }
 
 .main-container .title-container h2 {
